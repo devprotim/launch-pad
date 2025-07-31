@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
-import { DatePicker } from 'primeng/datepicker';
-import { NgModel } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { DatePickerModule } from 'primeng/datepicker';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  standalone: false
+  selector: 'app-home',
+  imports: [FormsModule, ButtonModule, TableModule, DatePickerModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class AppComponent {
-  title = 'launch-pad';
+export class HomeComponent {
   date: Date | null = null;
 
-  // Sample data for PrimeNG table (if needed)
+  // Sample data for PrimeNG table
   customers = [
     { id: 1, name: 'John Doe', email: 'john@example.com', country: 'USA' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', country: 'UK' },
