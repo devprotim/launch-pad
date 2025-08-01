@@ -15,10 +15,12 @@ import { ContactComponent } from './pages/contact/contact.component';
 // PrimeNG Modules
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { MenubarModule } from 'primeng/menubar';
 import { providePrimeNG } from 'primeng/config';
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 import { DatePickerModule } from 'primeng/datepicker';
+import { CardModule } from 'primeng/card';
 
 // custom blue theme preset
 const BluePreset = definePreset(Aura, {
@@ -50,6 +52,7 @@ const BluePreset = definePreset(Aura, {
     AppRoutingModule,
     ButtonModule,
     TableModule,
+    MenubarModule,
     DatePickerModule,
     NavbarComponent,
     FooterComponent,

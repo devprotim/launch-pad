@@ -41,3 +41,36 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
+.bg-grey {
+    background-color: #ecedee;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-60 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .font-60 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .font-18 {
+        font-size: 16px;
+    }
+}
