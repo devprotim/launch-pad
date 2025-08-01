@@ -46,6 +46,10 @@ body {
     background-color: #ecedee;
 }
 
+.bg-off-white {
+    background-color: #f7f7f7;
+}
+
 .font-18 {
     font-size: 18px;
 }
@@ -73,4 +77,64 @@ body {
     .font-18 {
         font-size: 16px;
     }
+}
+
+/* Common page styles for legal pages (Terms, Privacy) */
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--p-primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.content-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--p-primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.content-list {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.content-list li {
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+}
+
+.content-list li::marker {
+    color: var(--p-primary-color);
+    font-size: 1.2em;
 }
